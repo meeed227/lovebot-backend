@@ -14,7 +14,7 @@ app = FastAPI()
 # ✅ Add this section
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://my-love-gacha.vercel.app"],  # ✅ URL ของ Vercel จริง
+    allow_origins=["https://my-love-gacha.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
