@@ -27,9 +27,14 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 def fetch_random_message():
     try:
+        print(f"Fetching from {API_URL}...")  # เพิ่มบรรทัดนี้
         response = requests.get(API_URL)
+        print(f"Status Code: {response.status_code}")  # เพิ่มดู status
         if response.status_code == 200:
+            print(f"Response OK: {response.json()}")
             return response.json()['message']
+        else:
+            print(f"Bad response: {response.text}")
     except Exception as e:
         print(f"Error fetching message: {e}")
     return "ขออภัย บอทมีปัญหา 😢"
