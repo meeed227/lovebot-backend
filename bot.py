@@ -6,7 +6,7 @@ from discord.ext import commands, tasks
 import os
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-CHANNEL_ID = '';
+CHANNEL_ID = 1257722979463467074
 
 API_URL = '/random'  # ชี้ไปที่ FastAPI
 
