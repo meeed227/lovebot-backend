@@ -19,7 +19,7 @@ from fastapi.middleware.cors import CORSMiddleware
 TOKEN = os.getenv("DISCORD_TOKEN")
 CHANNEL_ID = 1257722979463467074
 
-API_URL = '/random'
+API_URL = 'https://lovebot-backend.onrender.com/random'
 
 intents = discord.Intents.default()
 intents.message_content = True
